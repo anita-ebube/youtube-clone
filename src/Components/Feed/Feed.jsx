@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Feed.css';
 import { Link } from 'react-router-dom';
-import Thumbnail from '../../assets/Thumbnail.jpeg'; // You might not need this if you're getting thumbnails from API
 import { API_KEY } from '../../data';
-import Sidebar from '../Sidebar/Sidebar';
 import { value_converter } from '../../data';
 
 const Feed = ({ category }) => {
