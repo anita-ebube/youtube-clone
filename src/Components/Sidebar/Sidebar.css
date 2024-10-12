@@ -1,0 +1,106 @@
+/* Base sidebar styles */
+.sidebar {
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+
+.shortcut-links img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 85%;
+}
+
+.subscribed-list h3 {
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+
+.subscribed-list img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Small sidebar for mobile */
+.small-sidebar {
+    width: 5%;
+}
+
+.small-sidebar p,
+.small-sidebar h3 {
+    display: none;
+}
+
+.small-sidebar hr {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.side-link.active img {
+    padding-bottom: 2px;
+    border-bottom: 2px solid red;
+}
+
+/* Responsive sidebar for mobile devices */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 600px; /* Minimize the sidebar width */
+        padding-left: 5px;
+        padding-right: 10px;
+        padding-top: 60px;
+    }
+
+    .side-link img {
+        margin-right: 0;
+    }
+
+    .side-link p {
+        display: none; /* Hide text inside side links */
+    }
+
+    /* .subscribed-list h3,
+    .subscribed-list img {
+        display: none; /* Hide subscribed list for mobile */
+    /* } */ */
+
+    .sidebar hr {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .small-sidebar {
+        width: 40px; /* Smaller version on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 30px;
+    }
+
+    .sidebar hr {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
